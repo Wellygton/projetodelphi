@@ -24,23 +24,22 @@ object frmprodutividade: Tfrmprodutividade
     BackWall.Brush.Style = bsClear
     Title.Text.Strings = (
       'TDBChart')
-    View3D = False
     TabOrder = 0
-    object Series1: TBarSeries
+    object Series1: THorizBarSeries
       Marks.ArrowLength = 20
       Marks.Visible = True
       DataSource = ADOTable1
       SeriesColor = clRed
       XLabelsSource = 'StatusSer'
       XValues.DateTime = False
-      XValues.Name = 'X'
+      XValues.Name = 'Bar'
       XValues.Multiplier = 1.000000000000000000
-      XValues.Order = loAscending
+      XValues.Order = loNone
       XValues.ValueSource = 'novototal'
       YValues.DateTime = False
-      YValues.Name = 'Bar'
+      YValues.Name = 'Y'
       YValues.Multiplier = 1.000000000000000000
-      YValues.Order = loNone
+      YValues.Order = loAscending
       YValues.ValueSource = 'novototal'
     end
   end

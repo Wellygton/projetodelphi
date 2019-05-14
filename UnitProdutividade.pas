@@ -11,7 +11,6 @@ type
     DataSource1: TDataSource;
     ADOTable1: TADOTable;
     DBChart1: TDBChart;
-    Series1: TBarSeries;
     ADOTable1NumeroOs: TAutoIncField;
     ADOTable1TecRes: TIntegerField;
     ADOTable1DataEntra: TDateTimeField;
@@ -31,6 +30,7 @@ type
     ADOTable1novovalor: TBCDField;
     ADOTable1novodesconto: TBCDField;
     ADOTable1novototal: TBCDField;
+    Series1: THorizBarSeries;
   private
     { Private declarations }
   public

@@ -1,0 +1,34 @@
+object dmtec: Tdmtec
+  OldCreateOrder = False
+  Left = 192
+  Top = 117
+  Height = 150
+  Width = 215
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\FACULDADE\SOFTWA' +
+      'RE ORDEM DE SERVI'#199'O\bd\Cadastro.mdb;Persist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 48
+    Top = 32
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'tecnico'
+    Left = 136
+    Top = 56
+    object ADOTable1idTec: TAutoIncField
+      FieldName = 'idTec'
+      ReadOnly = True
+    end
+    object ADOTable1nome: TWideStringField
+      FieldName = 'nome'
+      KeyFields = 'nome'
+    end
+  end
+end

@@ -1,0 +1,24 @@
+unit UnitProdutividade;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  Tfrmprodutividade = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmprodutividade: Tfrmprodutividade;
+
+implementation
+
+{$R *.dfm}
+
+end.
